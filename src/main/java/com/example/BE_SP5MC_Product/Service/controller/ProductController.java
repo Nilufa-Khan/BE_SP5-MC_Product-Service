@@ -19,6 +19,7 @@ public class ProductController {
         this.productService = productService;
     }
     @PostMapping("/product")
+
     public ResponseEntity<?> saveProduct(@RequestBody Product product){
         Product product1 = productService.saveProduct(product);
 
